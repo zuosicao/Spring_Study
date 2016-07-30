@@ -1,0 +1,16 @@
+/com/
+/config.properties
+/config.xml
+/jdbc.properties
+/rebel.xml
+/spring-autowiring.xml
+/spring-aware.xml
+/spring-beanannotation.xml
+/spring-beanscope.xml
+/spring-injection.xml
+/spring-lifecycle.xml
+/spring-order.xml
+/spring-resource.xml
+/transaction_01.xml
+/transaction_02.xml
+/transaction_03.xml

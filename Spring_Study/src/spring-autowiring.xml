@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+	<!--default-autowire="constructor"这里写了默认构造方法注入,所以能自动注入dao类 -->
+
+	<bean id="autoWiringService" class="com.spring.autowiring.AutoWiringService">
+		<!--如果没有加默认，应该在service的bean配置下加参数 -->
+		<constructor-arg name="autoWiringDAO" ref="autoWiringDAO" />
+	</bean>
+	<bean id="autoWiringDAO" class="com.spring.autowiring.AutoWiringDAO"></bean>
+</beans>
