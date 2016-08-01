@@ -18,6 +18,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration("classpath:transaction_01.xml")
+//@ContextConfiguration("file:WebRoot/WEB-INF/transaction_01.xml")
 public class SpringDemo{
 	@Resource(name="accountService")
 	public AccountService accountService;

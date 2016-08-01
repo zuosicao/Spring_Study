@@ -14,8 +14,11 @@
 		http://www.springframework.org/schema/tx/spring-tx.xsd
 		http://www.springframework.org/schema/task
        http://www.springframework.org/schema/task/spring-task-3.2.xsd">
-	<!-- 引入外部文件 -->
-	<context:property-placeholder location="classpath:jdbc.properties"/>
+	
+	<!-- 引入外部文件,默认是从classpath中加载 -->
+	<!-- <context:property-placeholder location="classpath:jdbc.properties"/> -->
+	<context:property-placeholder location="file:WebRoot/properties/jdbc.properties"/>
+
 	
 	<!-- 配置c3p0连接池 -->
 	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
